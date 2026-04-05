@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loginUsernameInputLayout" type="id" />
+    <item name="loginPasswordInputLayout" type="id" />
+    <item name="searchViewEditText" type="id" />
+    <item name="signUpUsernameInputLayout" type="id" />
+    <item name="signUpPasswordInputLayout" type="id" />
+    <item name="signUpConfirmPasswordInputLayout" type="id" />
+</resources>

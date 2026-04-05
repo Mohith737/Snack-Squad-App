@@ -1,0 +1,14 @@
+# Ignore Gradle build cache
+.gradle/
+build/
+
+# Ignore IDE configs
+*.iml
+.idea/
+.vscode/
+
+# Ignore system files
+*.log
+*.lock
+.DS_Store
+Thumbs.db

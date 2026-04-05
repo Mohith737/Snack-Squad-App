@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Snack Squad</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_successful">Login successful</string>
+    <string name="account_created_successfully">Account successfully created. You can now log in.</string>
+    <string name="error_username_required">Username is required.</string>
+    <string name="error_username_length">Username must be 3 to 30 characters long.</string>
+    <string name="error_username_alphanumeric">Username must contain only letters and numbers.</string>
+    <string name="error_password_required">Password is required.</string>
+    <string name="error_password_length">Password must be 6 to 50 characters long.</string>
+    <string name="error_confirm_password_required">Confirm your password.</string>
+    <string name="error_passwords_do_not_match">Passwords do not match.</string>
+    <string name="error_invalid_credentials">Invalid username or password.</string>
+    <string name="error_user_exists">Username already exists.</string>
+    <string name="error_password_reset_required">This account must reset its password before logging in.</string>
+    <string name="search_hint">Search snacks</string>
+    <string name="cart_title">CART</string>
+    <string name="place_order">Place Order</string>
+    <string name="cart_empty_state">Cart is empty</string>
+    <string name="history_title">Order History</string>
+    <string name="no_orders_yet">No orders yet</string>
+    <string name="search_empty_state">No snacks found</string>
+    <string name="history_date_format">Placed on %1$s</string>
+    <string name="history_item_count_format">%1$d items</string>
+    <string name="history_total_price_format">Total: $%1$.2f</string>
+</resources>
