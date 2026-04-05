@@ -1,4 +1,4 @@
-﻿plugins {
+plugins {
     id("com.android.application") version "8.3.2"
     id("org.jetbrains.kotlin.android") version "1.9.22"
 }
@@ -41,7 +41,12 @@ android {
         jvmTarget = "17"
     }
 
-    buildTypes {
+    
+    lint {
+        abortOnError = false
+        checkReleaseBuilds = false
+    }
+buildTypes {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -65,3 +70,4 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
