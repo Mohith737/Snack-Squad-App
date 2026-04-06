@@ -5,13 +5,13 @@ import androidx.test.espresso.UiController
 import androidx.test.espresso.ViewAction
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.allOf
-import org.hamcrest.Matchers.isAssignableFrom
+import org.hamcrest.Matchers.instanceOf
 
 object TestViewActions {
     fun clickChildViewWithId(id: Int): ViewAction {
         return object : ViewAction {
             override fun getConstraints(): Matcher<View> {
-                return allOf(isAssignableFrom(View::class.java))
+                return allOf(instanceOf(View::class.java))
             }
 
             override fun getDescription(): String {

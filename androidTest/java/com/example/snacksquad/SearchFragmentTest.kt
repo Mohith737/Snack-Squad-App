@@ -1,6 +1,6 @@
 package com.example.snacksquad
 
-import androidx.fragment.app.testing.launchInContainer
+import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
@@ -69,6 +69,6 @@ class SearchFragmentTest {
     }
 
     private fun launchSearchFragment() {
-        launchInContainer<SearchFragment>(themeResId = R.style.Theme_SnackSquad)
+        launchFragmentInContainer<SearchFragment>(themeResId = R.style.Theme_SnackSquad)
     }
 }

@@ -1,6 +1,6 @@
 package com.example.snacksquad
 
-import androidx.fragment.app.testing.launchInContainer
+import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -98,6 +98,6 @@ class CartFragmentTest {
     }
 
     private fun launchCartFragment() {
-        launchInContainer<CartFragment>(themeResId = R.style.Theme_SnackSquad)
+        launchFragmentInContainer<CartFragment>(themeResId = R.style.Theme_SnackSquad)
     }
 }

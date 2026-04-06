@@ -1,6 +1,6 @@
 package com.example.snacksquad
 
-import androidx.fragment.app.testing.launchInContainer
+import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
@@ -15,7 +15,7 @@ class HomeFragmentTest {
 
     @Test
     fun popularItemsRecyclerViewIsDisplayedAndHasAtLeastFourItems() {
-        launchInContainer<HomeFragment>(themeResId = R.style.Theme_SnackSquad)
+        launchFragmentInContainer<HomeFragment>(themeResId = R.style.Theme_SnackSquad)
 
         onView(withId(R.id.PopulerRecyclerView)).check(matches(isDisplayed()))
         onView(withId(R.id.PopulerRecyclerView)).check(matches(RecyclerViewMatcher.hasItemCount(6)))
@@ -23,7 +23,7 @@ class HomeFragmentTest {
 
     @Test
     fun imageSliderIsVisible() {
-        launchInContainer<HomeFragment>(themeResId = R.style.Theme_SnackSquad)
+        launchFragmentInContainer<HomeFragment>(themeResId = R.style.Theme_SnackSquad)
 
         onView(withId(R.id.image_slider)).check(matches(isDisplayed()))
     }
