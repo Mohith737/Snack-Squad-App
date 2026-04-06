@@ -125,11 +125,12 @@ jobs:
       - name: Run instrumented tests
         uses: reactivecircus/android-emulator-runner@v2
         with:
-          api-level: 34
-          arch: x86_64
-          profile: Nexus 6
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim
+          api-level: 29
+          arch: x86
+          target: default
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -memory 2048
           disable-animations: true
+          emulator-boot-timeout: 600
           script: ./gradlew connectedDebugAndroidTest
 
       - name: Upload instrumented test results
@@ -180,3 +181,4 @@ jobs:
           path: |
             app/build/outputs/apk/debug/app-debug.apk
             build/outputs/apk/debug/*.apk
+
